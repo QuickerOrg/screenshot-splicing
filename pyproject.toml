@@ -1,0 +1,24 @@
+[project]
+name = "screenshot-splicing"
+version = "0.1.0"
+description = "Screen capture / video frame splicing for panorama stitching"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "numpy>=1.24",
+    "ffmpeg-python>=0.2.0",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+# For playground/experiments (opencv, imutils)
+dev = [
+    "opencv-python>=4.8",
+    "imutils>=0.5",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.0",
+]
